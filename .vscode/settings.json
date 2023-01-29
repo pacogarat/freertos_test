@@ -2,6 +2,7 @@
     "files.associations": {
         "cstddef": "cpp",
         "functional": "cpp",
-        "*.tcc": "c"
+        "*.tcc": "c",
+        "new": "cpp"
     }
 }
