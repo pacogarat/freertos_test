@@ -177,6 +177,7 @@ void loop()
     Serial.println("Entrando en deep sleep");
     Serial.flush();
     mqttClient.disconnect();
+    delay(2000);
     esp_deep_sleep_start();
   } else {
     delay(2000);
@@ -184,6 +185,7 @@ void loop()
     if (loop_count>TIME_FIRST_ON/2000) {
       Serial.println("Entrando en deep sleep");
       mqttClient.disconnect();
+      delay(2000);
       esp_deep_sleep_start();
     }
   }
